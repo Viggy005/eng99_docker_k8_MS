@@ -43,7 +43,20 @@ Double-click Docker.dmg to open the installer, then drag the Docker icon to the 
 - `running state, stop and start`
   
 ### how can we interact with running container?
-- 
+- ssh into docker container (any changes made will be reflectd in running application)
+-       docker exec -it "continer_id" bash
+-
+### change nginx file and check changes in read time
+
+### commit, build, push to docker hub
+
+- docker commit "container_id" viggy005/my-nginx
+- where viggy005 is the dockerhub repo user name
+- my-nginx is the repo name
+- to pull and use:
+  -       docker run -d -p 80:80 viggy005/my-nginx:latest
+  
+
 
 
 
