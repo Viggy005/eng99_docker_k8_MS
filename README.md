@@ -30,19 +30,19 @@ Double-click Docker.dmg to open the installer, then drag the Docker icon to the 
 
 
 - `hello-world` 
-- docker commands 
+### docker commands 
 - `docker pull image-name`
 - `docker run image-name`
 - `docker build -t image-name`
 - `docker push image-name`
 - `docker run -d -p 2368:2368 ghost`
-- how to check running container
+### how to check running container
 - `docker ps` and `docker ps -a` 
 
 ### Docker container life cycle 
 - `running state, stop and start`
   
-- how can we interact with running container?
+### how can we interact with running container?
 - 
 
 
