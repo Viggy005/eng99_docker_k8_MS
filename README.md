@@ -60,8 +60,11 @@ Double-click Docker.dmg to open the installer, then drag the Docker icon to the 
   -       docker run -d -p 80:80 viggy005/my-nginx:latest
 
 
-### copy file into container
+### copy file into container from local host
 -  docker cp index.html container_id:/foo.txt
+
+![](images/history.png)
+
 
 
 
