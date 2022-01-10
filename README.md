@@ -49,13 +49,20 @@ Double-click Docker.dmg to open the installer, then drag the Docker icon to the 
 ### change nginx file and check changes in read time
 
 ### commit, build, push to docker hub
-
-- docker commit "container_id" viggy005/my-nginx
-- where viggy005 is the dockerhub repo user name
-- my-nginx is the repo name
+- images are immutable
+- docker commit "container_id" viggy005/my-nginx:v1
+  - container_id does not come in quotes
+  - where viggy005 is the dockerhub repo user name
+  - my-nginx is the repo name
+  - vs is the tag
+- docker push viggy005/my-nginx:v1
 - to pull and use:
   -       docker run -d -p 80:80 viggy005/my-nginx:latest
-  
+
+
+### copy file into container
+-  docker cp index.html container_id:/foo.txt
+
 
 
 
