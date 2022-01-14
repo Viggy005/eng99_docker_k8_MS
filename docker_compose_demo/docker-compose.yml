@@ -1,0 +1,22 @@
+services:
+  nginx_server:
+    container_name: nginx1
+    image: nginx:latest
+    build:
+      context: .
+      dockerfile: nginx1.dockerfile
+    ports:
+      - "80:80"
+
+  nginx_server2:
+    container_name: nginx2
+    image: nginx:latest
+    ports:
+      - "81:80"
+
+
+# docker compose build
+# docker compose up
+# docker compose down
+# docker compose up -d
+# build: context tells location of dockerfile

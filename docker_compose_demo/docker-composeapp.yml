@@ -1,0 +1,25 @@
+services:
+app:
+  container_name: nodeapp
+  network:
+    - app-db-network
+
+  links:
+    - db
+  depends_on:
+    -db
+
+
+
+db:
+  container_name: db
+  network:
+    - app-db-network
+
+
+network:
+  app-db-network:
+    driver: bridge
+
+
+# ENV DB_HOST=mongodb://mongodb:27017/posts
