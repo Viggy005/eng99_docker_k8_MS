@@ -58,10 +58,12 @@ Double-click Docker.dmg to open the installer, then drag the Docker icon to the 
 - docker push viggy005/my-nginx:v1
 - to pull and use:
   -       docker run -d -p 80:80 viggy005/my-nginx:latest
+  -       docker cp index.html 95de07fd17df:/urs/share/nginx/html/index.html
 
 
 ### copy file into container from local host
 -  docker cp index.html container_id:/foo.txt
+-   docker cp index.html 95de07fd17df:/urs/share/nginx/html/index.html
 
 ![](images/history.png)
 
